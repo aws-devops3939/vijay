@@ -10,7 +10,7 @@ def check_health(endpoint):
         method = endpoint.get("method", "GET").upper()
         url = endpoint["url"]
         headers = endpoint.get("headers", {})
-        body = endpoint.get("body", None) 
+        body = endpoint.get("body", None)  
 
         if method == "GET":
             response = requests.get(url, headers=headers, timeout=5)
