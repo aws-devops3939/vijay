@@ -5,7 +5,7 @@ import threading
 from collections import defaultdict
 
 # Function to check if the HTTP request was successful (UP)
-def check_health(endpoint):
+def check_health(endpoint): 
     try:
         method = endpoint.get("method", "GET").upper()
         url = endpoint["url"]
