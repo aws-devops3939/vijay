@@ -4,7 +4,7 @@
   name: fetch index page
   url: https://fetch.com/ 
 - headers:
-    user-agent: fetch-synthetic-monitor
+    user-agent: fetch-synthetic-monitor 
   method: GET
   name: fetch careers page
   url: https://fetch.com/careers
