@@ -1,0 +1,293 @@
+wq                                      Linux
+                                      ------
+
+-------
+0. sudo su          -
+1. ls               -
+2. mkdir            - create folder
+3. rmdir  =filename - remove folder
+4. pwd              - show path
+5. touch            - creat any file
+6. rm    =filename  - delete file name
+7. cd ../           - one folder back
+   cd //            - direct folder go
+8. vim   =filename  - if you want go inside the file
+9. shift + I        - open insert
+10. esc             - give esc because hide the insert
+11. :wq!            - with save 
+12. :q!             - with out save
+13. clear           - once if want erasy all things we should use this.
+14. history         - cheak history
+
+
+cd ~
+
+
+
+
+apache    ap 
+apple     app
+
+
+
+----------------
+ 
+    2  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz
+    3  ls
+    4  tar xvzf apache-tomcat-9.0.91.tar.gz
+    5  ls
+    6  rm -rf apache-tomcat-9.0.91.tar.gz
+    7  ls
+    8  mv apache-tomcat-9.0.91/ tomcat
+    9  ls
+   10  cd tomcat
+   11  ls
+   12  ls
+   13  lsof -i -n -p | grep LISTEN
+   14  yum install java -y
+   15  ls
+   16  cd bin
+   17  ls
+   18  vim shutdown.sh
+   19  ./shutdown.sh
+   20  ls
+   21  ./startup.sh
+   22  ls
+   23  lsof -i -n -p | grep LISTEN
+   24  firewall-cmd --permanent --add-port=80/tcp
+   25  netstat -lntu
+   26  ss -lntu
+   27  netstat -na | grep :4000
+   28  ss -na | grep :4000
+   29  sudo ufw allow 4000
+   30  firewall-cmd --add-port=4000/tcp
+   31  sudo ss-lntp
+   32  telnet localhost 8080
+   33  history
+
+
+
+
+
+=========================================================================================
+
+                           Install in Linux with Apache:- 
+                           -----------------------------
+
+step-1  
+-----
+change user ---> *. sudo su.
+
+step-2
+-----
+
+install apache  ------->  = *. wget -https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz
+
+step-3
+------
+
+we should do gip to ungip this apche   ------->  = *. tar xvzf apache-tomcat-9.0.91.tar.gz
+
+ 
+step-4
+------
+
+we hava to delete to apache gip (like red link) ------> = *. rm -rf (red file name)
+
+step-5
+------
+we should re-name in apche folder name   ------>  =*.  mv (folder name)/ tomcat
+
+
+step-6
+-------
+
+we should install JAVA in tomcat folder inside  -----> =*. yum install java -y
+
+
+step-7
+-------
+
+we go to the ' cd bin' then 'startup' this application    -----> = *. ./startup.sh
+
+
+step-8
+-------
+
+1) we should TEST this application                     ------> *. 
+2) we should copy aws server public ip address copy address past in crom and cheak
+3) Then go to security and click security group link and edit after give (All TCP and Anywhere-ipv4) then save
+
+
+==============================================================
+
+
+
+                        Install Jenken with aws server inside:-
+                          ----------------------------------
+
+1. Create server
+2. download jenkin
+3. Install JAVA dependency 
+4. install jenkin
+5. we should jenkin service START
+6. jenkin job creat and check (Running or not)
+
+
+
+
+
+Setp-1
+------
+
+Go to goole type Jenkin than clik download option then right side click Red Hat link
+
+step-2
+------
+Just Download Jenkins repository(repo) package:- 
+
+LINK:-  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
+
+
+step-3
+------
+
+we have to download Jenkin key:-
+
+LINK:-  sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io-2023.key
+
+
+step-4
+-------
+Now we have to install JAVA dependency:
+
+    LINK:-   yum install fontconfig java-17-openjdk
+
+[NOTE] :- If not install java please aging copy and past in the blow link.
+ 
+   LINK: sudo dnf install java-17-amazon-corretto-devel
+
+give 'Y'. 
+
+
+step-5
+--------
+
+Now we have to install Jenkins :-
+
+LINK:-  sudo yum install jenkins
+
+give to "Y".
+
+
+step-6
+-------
+
+we have to 'Start' services:--
+
+We just check states and use this link :-->  
+LINK:- sudo systemctl status jenkins
+
+we have to change to (disabled to enabled)  use this link:--> 
+LINK:- sudo systemctl enable jenkins
+
+Check status :-  (disabled or enabled) ==  
+LINK:- sudo systemctl status jenkins
+
+Now start this services :-  
+LINK:-  sudo systemctl start jenkins
+
+Check status :- It will show in green color [active (running)]
+LINK:- sudo systemctl status jenkins
+
+
+step-7
+-------
+
+we should check site (Running or Not):
+
+Copy to publing ip address past in google crom :- 
+
+default port id:   8080
+
+
+step-8
+-------
+
+
+We have to edit port in SSH to ALL TCP
+
+
+step-9
+-------
+
+Now we have to unlock Jenkins (password):- 
+
+- Copy to that path -(/var/lib/Jenkins/ ect....)
+  past in aws server inside 
+
+- It will show permission denied.
+
+-then we have to give one commend (more).
+
+  after we give to (sudo su ) then past that (path).
+
+
+step-10
+-------
+
+(install suggested pluging) in jenkin.
+
+
+===================================================================
+
+nakari gmail:- pvijay0695@gmail.com
+nakari password:- Devops@3939
+
+
+Git hub password: Josaep@3939
+===================================================================
+
+
+
+GIT HUB COMMENDS:- 
+-----------------
+
+git init                        -This create folder
+git status                      - just status check
+
+git clone (ssh - link)        - like download
+
+git add .                      - add all files
+git add (file name)             - just one file
+git commit -m "give some name"  - 
+git push                        - pr (pull requst)                -
+
+
+dir                            - if you want see name
+
+git checkout -b Vijay          -   create brach 
+git checkout Vijay             - if you want go to branch this commends which already created
+
+
+
+
+
+http://54.152.78.8:8080/
+05cc77e059b44a20bfe02f8655a7d099
+admin
+
+
+need to check bash script
+
+
+
+
+
+
+
+
+
+
+
+
