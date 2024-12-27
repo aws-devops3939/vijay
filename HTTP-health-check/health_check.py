@@ -68,7 +68,7 @@ def main(file_path):
     monitoring_thread.daemon = True  # Run the thread in the background
     monitoring_thread.start()
 
-    # Run indefinitely until the user interrupts (CTRL+C)
+    # Run indefinitely until the user interrupts (CTRL+C).
     try:
         while True:
             time.sleep(1)

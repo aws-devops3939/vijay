@@ -9,7 +9,7 @@
   name: fetch careers page
   url: https://fetch.com/careers
 - body: '{"foo":"bar"}'
-  headers: 
+  headers : 
     content-type: application/json
     user-agent: fetch-synthetic-monitor
   method: POST
@@ -17,7 +17,7 @@
   url: https://fetch.com/some/post/endpoint
 - name: fetch rewards index page
   url: https://www.fetchrewards.com/
-
+ 
 
 
 

@@ -1,5 +1,5 @@
 ## HTTP Endpoint Health Checker  
-This program monitors the health of HTTP endpoints by periodically testing their availability and logs the cumulative availability percentage for each domain.
+ This program monitors the health of HTTP endpoints by periodically testing their availability and logs the cumulative availability percentage for each domain.
 
 ## Prerequisites
 - Python 3.8 or higher
