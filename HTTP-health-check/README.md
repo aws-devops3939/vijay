@@ -10,7 +10,7 @@
 1. Clone this repository:  
    ```bash
    git clone <repository-url>
-   cd <repository-directory> 
+   cd <repository-directory>  
 
 ## Install the required Python packages
 pip install -r requirements.txt
